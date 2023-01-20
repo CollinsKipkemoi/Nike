@@ -91,3 +91,6 @@ button {
 .shoes>img:hover{
   animation: scale 2s ease-in-out 1;
 }
+.fa-cart-shopping:hover{
+  color: orange;
+}
