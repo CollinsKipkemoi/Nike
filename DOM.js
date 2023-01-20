@@ -57,3 +57,13 @@ function name() {
     btn1.style.display = "block"
 }
 btn.addEventListener('click',name)
+//another example
+let div3 = document.querySelector(".div3")
+let btn3 = document.querySelector(".btn3")
+let lrm = document.querySelector(".lrm")
+
+function disp() {
+    lrm.style.display = "block"
+    btn3.style.display = "none"
+}
+btn3.addEventListener("click",disp)

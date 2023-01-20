@@ -82,6 +82,14 @@ button {
 
   height: 300px;
 }
+.btn1{
+  color: black;
+  background-color: white;
+  border: 1px solid white;
+}
+.btn1:hover{
+  box-shadow: 0px 0px 10px white;
+}
 
 @keyframes scale{
   50%{
@@ -93,4 +101,14 @@ button {
 }
 .fa-cart-shopping:hover{
   color: orange;
+}
+@media screen and (min-width:1000px) {
+  main{
+    padding: 80px;
+  }
+}
+@media screen and (min-width:800px) and (max-width:999px) {
+  main{
+    padding: 60px;
+  }
 }

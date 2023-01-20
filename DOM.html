@@ -6,24 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM</title>
     <style>
-      .div{
-        width: 70vw;
+      .div {
+        width: 50vw;
         height: 70vh;
         border: 1px solid green;
         border-radius: 20px;
       }
-      body{
+      body {
         width: 100vw;
-        height: 100vh;
+        height: auto;
       }
-      body,.div{
+      body,
+      .div {
         display: flex;
         align-items: center;
         justify-content: center;
       }
-    .btn1{
+      .div3 {
+        width: 30vw;
+        height: 30vh;
+        border: 1px solid orange;
+        margin-left: 20px;
+        border-radius: 20px;
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+      }
+      .btn3 {
+        width: fit-content;
+        height: fit-content;
+        position: absolute;
+      }
+      .btn1 {
         display: none;
-    }
+      }
+      .lrm{
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -38,9 +58,13 @@
         <li>item 5</li>
         <li>item 6</li>
       </ul>
-      <br>
-      <br>
-      <button style="margin-left: 30px;" type="button">Click me</button>
+      <br />
+      <br />
+      <button style="margin-left: 30px" type="button">Click me</button>
+    </div>
+    <div class="div3">
+      <button class="btn3" type="button">Click Me</button>
+      <p class="lrm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur in error veritatis itaque culpa. Nemo, itaque molestias facere commodi rem odit velit minima consequuntur ea aliquam aliquid repellat maxime quas! Officiis sint praesentium pariatur voluptate voluptatem perspiciatis.</p>
     </div>
     <script src="DOM.js"></script>
   </body>
