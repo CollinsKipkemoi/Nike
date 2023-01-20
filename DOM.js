@@ -31,3 +31,29 @@ previousElementSibling
 */
 
 //EVENT LISTENERS
+//(i). click
+let h1 = document.querySelector('button')
+function change() {
+    h1.style.color = 'green'
+    document.querySelector('div').style.boxShadow = '0px 0px 25px white'
+   
+}
+h1.addEventListener('click',change)
+
+//(ii). mouseover()
+let div = document.querySelector('.div')
+function border() {
+    div.style.border = '1px solid red'
+    div.style.boxShadow = '0px 0px 50px white'
+}
+div.addEventListener('mouseover',border)
+
+//(iii). click()
+let btn = document.querySelector('button')
+let sixth = document.querySelector('ul').lastElementChild
+let btn1 = document.querySelector(".btn1")
+function name() {
+    sixth.style.display = 'none'
+    btn1.style.display = "block"
+}
+btn.addEventListener('click',name)
