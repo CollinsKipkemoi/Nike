@@ -1,3 +1,9 @@
+//TODO: EVENT PROPAGATION
+//TODO: EVENT DELEGATION
+// * Need to check it out
+// !Really fast 
+// ?Today maybe
+
 console.clear()
 let ul = document.querySelector('ul')
 console.log(ul.parentElement);
@@ -62,8 +68,15 @@ let div3 = document.querySelector(".div3")
 let btn3 = document.querySelector(".btn3")
 let lrm = document.querySelector(".lrm")
 
-function disp() {
-    lrm.style.display = "block"
-    btn3.style.display = "none"
+function disp(e) {
+    console.log(e);
+    btn3.textContent = "Clicked!!"
 }
-btn3.addEventListener("click",disp)
+btn3.addEventListener("click",disp,true)
+
+// TODO: EVENT PROPAGATION
+/**
+ * Two methods:
+ * *bubbling - here the events are first captured by the inner most elements then propagated to the outermost elements
+ * *capturing - The events are first captured by the outermost elements then propagated to the inner elements 
+ */
