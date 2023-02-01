@@ -75,7 +75,7 @@ button {
 .div2 {
   width: 400px;
   height: fit-content;
-  background: url(./photos/lgreen.png);
+  background: url(lgreen.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
